@@ -41,40 +41,36 @@
 ### Steps
 1. **Clone the Repository**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/RumelNHORS/EnglishPoint.git
    cd EnglishPoint
-Set Up the Environment
 
-bash
-Copy code
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-Install Dependencies
+2. **Set Up the Environment**
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows: env\Scripts\activate
 
-bash
-Copy code
-pip install -r requirements.txt
-Configure the Database
+3. **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
 
-Create a MySQL database.
-Update the DATABASES section in englishpoint/settings.py with your MySQL credentials.
-Run Migrations
+4. **Configure the Database**
+    ```bash
+    Create a MySQL database.
+    Update the DATABASES section in englishpoint/settings.py with your MySQL credentials.
 
-bash
-Copy code
-python manage.py makemigrations
-python manage.py migrate
-Create a Superuser
+5. **Run Migrations**
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
 
-bash
-Copy code
-python manage.py createsuperuser
-Run the Development Server
+6. **Create a Superuser**
+    ```bash
+    python manage.py createsuperuser
 
-bash
-Copy code
-python manage.py runserver
-Access the Application
+7. **Run the Development Server**
+    ```bash
+    python manage.py runserver
 
+7. **Access the Application**
 Admin panel: http://127.0.0.1:8000/admin/
 API endpoints: http://127.0.0.1:8000/api/
