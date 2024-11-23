@@ -15,3 +15,27 @@ class HeroSectionSerializer(serializers.ModelSerializer):
     class Meta:
         model = api_models.HeroSection
         fields = ['id', 'title', 'description', 'button_text_primary', 'button_text_secondary', 'images']
+
+
+class AboutUsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = api_models.AboutUs
+        fields = ['id', 'title', 'content', 'image']
+
+
+class OfferSectionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = api_models.OfferSection
+        fields = ['id', 'title', 'content', 'percentage', 'image', 'description', 'color']
+
+
+class OurServicesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = api_models.OurServices
+        fields = ['id', 'title', 'content', 'link', 'image']
+
+
+class CourseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = api_models.Course
+        fields = ['id', 'title', 'description', 'image', 'link', 'duration', 'price', 'created_date', 'updated_date']
